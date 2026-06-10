@@ -1,6 +1,6 @@
-PWD d:/ユーザー/ayuut/Box/csyt24006/csyt24006/講義＆課題/3年/前期/航空力学
+PWD d:/ユーザー/ayuut/新しいフォルダー/講義＆課題/3年/前期/航空力学
 INPUT d:/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt
-INPUT d:/ユーザー/ayuut/Box/csyt24006/csyt24006/講義＆課題/3年/前期/航空力学/第1回課題.tex
+INPUT d:/ユーザー/ayuut/新しいフォルダー/講義＆課題/3年/前期/航空力学/第1回課題.tex
 OUTPUT output_files/第1回課題.log
 INPUT d:/texlive/2024/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
 INPUT d:/texlive/2024/texmf-dist/tex/latex/base/ltluatex.lua
@@ -317,6 +317,7 @@ INPUT ./output_files/第1回課題.out
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.5.21)  10 JUN 2026 20:08
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.5.21)  10 JUN 2026 21:25
  restricted system commands enabled.
  file:line:error style messages enabled.
-**d:/ユーザー/ayuut/Box/csyt24006/csyt24006/講義＆課題/3年/前期/航空力学/第1回課題.tex
-(d:/ユーザー/ayuut/Box/csyt24006/csyt24006/講義＆課題/3年/前期/航空力学/第1回課題.tex
+**d:/ユーザー/ayuut/新しいフォルダー/講義＆課題/3年/前期/航空力学/第1回課題.tex
+(d:/ユーザー/ayuut/新しいフォルダー/講義＆課題/3年/前期/航空力学/第1回課題.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
@@ -1059,71 +1059,72 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 111.
 
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 114.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 114.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 114.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 114.
 [1
 
 
-] [2]
-LaTeX Font Info:    Calculating math sizes for size <13.14001> on input line 180.
+]
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 134.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.76755pt on input line 180.
+(Font)              scaled to size 11.09656pt on input line 134.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 134.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 134.
+ [2]
+LaTeX Font Info:    Calculating math sizes for size <13.14001> on input line 191.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 180.
+(Font)              scaled to size 7.76755pt on input line 191.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 5.54828pt on input line 191.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.76755pt on input line 180.
+(Font)              scaled to size 7.76755pt on input line 191.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 180.
+(Font)              scaled to size 5.54828pt on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 180.
+(hyperref)                removing `subscript' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 180.
+(hyperref)                removing `subscript' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 204.
 
 (load cache: extra_lmmono10-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 200.
+(Font)              scaled to size 9.24713pt on input line 211.
 [3] (./output_files/第1回課題.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1134,19 +1135,19 @@ Package rerunfilecheck Info: File `第1回課題.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 22041 strings out of 476447
+ 22043 strings out of 476447
  125244,1977958 words of node,token memory allocated
  3600 words of node memory still in use:
    64 hlist, 13 vlist, 11 rule, 4 math, 46 glue, 22 kern, 97 glyph, 438 attribute, 94 glue_spec, 62 attribute_list, 1 write, 31 user_defined, 1 pdf_action nodes
-   avail lists: 1:28,2:33931,3:305,4:400,5:234,6:28,7:4303,8:53,9:2009,10:30,11:3
- 43600 multiletter control sequences out of 65536+600000
+   avail lists: 1:21,2:31662,3:364,4:397,5:242,6:27,7:4463,8:53,9:1928,10:30,11:3
+ 43601 multiletter control sequences out of 65536+600000
  128 fonts using 86552887 bytes
- 125i,16n,128p,1944b,826s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on 第1回課題.pdf (3 pages, 160604 bytes).
+ 125i,17n,128p,1945b,835s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on 第1回課題.pdf (3 pages, 169488 bytes).
 
-PDF statistics: 154 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 131072)
+PDF statistics: 159 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 131072)
  49 words of extra memory for PDF output out of 10000 (max. 100000000)
 
