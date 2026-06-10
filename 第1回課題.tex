@@ -1,0 +1,204 @@
+\RequirePackage{fix-cm}
+\documentclass[a4paper,titlepage,11pt]{ltjsarticle}
+
+\usepackage{luatexja}
+
+\usepackage[margin=25mm]{geometry}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\usepackage{amsmath, amssymb, ar, bm, booktabs, siunitx, xurl, graphicx, comment, multirow, fancybox, ascmac, enumerate, pdfpages, color, longtable, pxrubrica, wrapfig, mathtools, geometry, cite, here, tocloft, listings}
+
+\def\circledenumerate#1{\textcircled{\scriptsize #1}}
+
+\graphicspath{{picture},{figure}}
+
+\makeatletter
+\def\@cite#1{\textsuperscript{\ #1)}}
+\makeatother
+
+\newenvironment{hangall}[1]{\hangindent = #1\zw\everypar{\hangindent = #1\zw}}{}
+
+\usepackage[pdfencoding=auto]{hyperref}
+\hypersetup{
+setpagesize = false,
+bookmarksnumbered = true,
+bookmarksopen = true,
+colorlinks = true,
+linkcolor = black,
+citecolor = black,
+urlcolor = cyan
+}
+
+\lstset{
+language=C, % 言語をCに設定
+basicstyle=\small\ttfamily, % フォントスタイル
+keywordstyle=\color{blue}\bfseries, % キーワードのスタイル
+commentstyle=\color{green!60!black}, % コメントのスタイル
+stringstyle=\color{purple}, % 文字列リテラルのスタイル
+numberstyle=\tiny\color{gray}, % 行番号のスタイル
+breaklines=true, % 自動で改行
+captionpos=b, % キャプションを下に表示
+numbers=left, % 行番号を左に表示
+stepnumber=1, % 行番号を1ずつ増加
+numbersep=5pt, % 行番号とコードの間隔
+% 日本語のコメントを扱うための設定
+% escapeinside={\%*}{*)},
+% literate={*}{\%*{”}*)}{1} % 全角のダブルクォーテーションを正しく表示
+}
+
+\makeatletter
+\def\LT@makecaption#1#2#3{
+\LT@mcol\LT@cols c{\hbox to\z@{\hss\parbox[t]\LTcapwidth{
+\sbox\@tempboxa{#1{#2 }#3}
+\ifdim\wd\@tempboxa>\hsize
+#1{#2 }#3
+\else
+\hbox to\hsize{\hfil\box\@tempboxa\hfil}
+\fi
+\endgraf\vskip\baselineskip}
+\hss}}}
+\makeatother
+%↑↑↑↑↑↑↑↑↑↑↑↑ 《 DO NOT EDIT 》 ↑↑↑↑↑↑↑↑↑↑↑↑%
+
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+\setlength{\abovedisplayskip}{15pt}
+\setlength{\belowdisplayskip}{15pt}
+
+\clearpage
+
+%\listoffigures
+%\listoftables
+
+{\Large 航空宇宙工学科 4006番 荒川優太}
+
+\section{本課題で用いる条件}
+\begin{table}[hbtp]
+\centering
+\caption{}
+\label{table:}
+\begin{tabular}{cc}
+\toprule
+項目 & 内容 \\
+\hline
+使用機体 & エアバス A321-200ceo\\
+主翼翼面積 $S$ & 122.4 $\mathrm{m^2}$ \\
+空力平均翼弦 $MAC_c$ & 3.59 m \\
+巡航速度 $U_c$ & 240 m/s\\
+重量(燃料含) $W$ & 80000 kg \\
+巡行時大気圧 $p_c$ & 30000 Pa \\
+巡行高度 $h_c$ & 9000 m \\
+巡行時空気温度 $T_c$ & 229.733 K \\
+巡行時気体密度 $\rho_c$ & 0.4671 $\mathrm{kg/m^3}$ \\
+巡行時動粘性係数 $\nu_c$ & $3.1957 \times 10^{-5}$$\mathrm{m^2/s}$ \\
+巡行時音速 $a_c$ & 303.848 m/s \\
+風洞試験時空力平均翼弦 $MAC_0$ & 0.151 m \\
+風洞試験時大気圧 $p_0$ & 101325 Pa \\
+風洞試験時空気温度 $T_0$ & 288.15 K \\
+風洞試験時気体密度 $\rho_0$ & 1.225 $\mathrm{kg/m^3}$ \\
+風洞試験時動粘性係数 $\nu_0$ & $1.4607 \times 10^{-5}$ $\mathrm{m^2/s}$ \\
+風洞試験時粘性率 $\mu_0$ & $1.4607 \times 10^{-5}$ kg/m/s \\
+風洞試験時音速 $a_0$ & 340.294 m/s \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{模型の風洞試験を用いた揚力$L$，抗力$D$の求め方}
+風洞試験では，実機と等しいスケールの条件を用意することが難しいため，小さいサイズの模型を用いるなければならない．小さいサイズの模型を用いると，測定される揚力と抗力は実機と比較して異なる値を示すため，そのデータを直接用いることはできない．そのため，揚力と抗力を無次元化した，揚力係数と抗力係数を算出する必要がある．
+
+\subsection{レイノルズ数}
+揚力係数，抗力係数はともに無次元化された係数で，揚力$L$，抗力$D$を用いて以下のように表される．
+\begin{align}
+\label{eq:揚力係数}
+C_L = \frac{L}{\frac{1}{2}\rho U^2 S}
+\end{align}
+\begin{align}
+\label{eq:抗力係数}
+C_D = \frac{D}{\frac{1}{2}\rho U^2 S}
+\end{align}
+これらの値は翼の形状で決定されるほか，流体の特性を表す無次元数のレイノルズ数$Re$やマッハ数$M$による影響がある．流体の粘性率を$\mu$とすると，レイノルズ数は以下のように表される．
+\begin{align}
+\label{eq:レイノルズ数}
+Re = \frac{\rho ~U L}{\mu} = \frac{U L}{\nu}
+\end{align}
+
+無次元化された値を用いることで，翼のサイズに左右されることなく，実機の揚力と抗力を算出することが可能である．まず，本課題で用いる飛行条件から巡行時のレイノルズ数$Re_c$を算出する．
+\begin{align}
+\begin{split}
+\label{eq:巡行レイノルズ数}
+Re_c = \frac{U_c ~ {MAC}_c}{\nu_c} = \frac{240 \times 3.59}{3.1957 \times 10^{-5}} = 2.696 \times 10^7
+\end{split}
+\end{align}
+
+つまり，風洞試験の際もこのレイノルズ数に合わせる必要がある．風洞試験には，2m$\times$2m遷音速風洞を用い，代表長さ$L = 0.151 [m]$の翼模型を用いる．これは，全幅を風洞のサイズである2 m 以内に収める必要があるためである．以上より，風洞試験時のレイノルズ数は以下のようになる．
+\begin{align}
+\label{eq:風洞レイノルズ数}
+Re_0 = \frac{U_0 ~ {MAC}_0}{\nu_0} = \frac{U_0 \times 0.151}{1.4607 \times 10^{-5}} = 2.696 \times 10^7
+\end{align}
+であるので，風洞試験の際の速度$U$について解くと$U = 2608$ [m/s]となる．
+
+\subsection{マッハ数}
+揚力係数$C_L$，抗力係数$C_D$はレイノルズ数だけでなく，マッハ数の影響も受ける．マッハ数は流速と音速の比である．そのため，マッハ数を求めるためには音速を求める必要がある．音速$a$は以下のように表される．
+\begin{align}
+\begin{split}
+\label{eq:音速}
+a = \sqrt{\gamma R T}
+\end{split}
+\end{align}
+したがって，流速$U$を用いるとマッハ数$M$は以下のように表される．
+\begin{align}
+\label{eq:マッハ数}
+M = \frac{U}{a} = \frac{U}{\sqrt{\gamma R T}}
+\end{align}
+ここで，$\gamma$は比熱比，$R$は空気の気体定数，$T$は温度である．本課題で用いる飛行条件から巡行時のマッハ数$M_c$を算出する．$\gamma$は1.403，$R$は287 [J/kg/K]であるため，$M_c$は以下のようになる．
+\begin{align}
+\begin{split}
+\label{eq:巡行マッハ数}
+M_c = \frac{U_c}{a_c} = \frac{240}{303.848} = 0.7899
+\end{split}
+\end{align}
+風洞試験の際もこのマッハ数に合わせる必要がある．風洞試験の際のマッハ数は以下のようになる．
+\begin{align}
+\label{eq:風洞マッハ数}
+M_0 = \frac{U_0}{a_0} = \frac{2608}{340.294} = 7.66
+\end{align}
+このように，風洞試験の際のマッハ数は巡行時のマッハ数と大きく異なる．そのため，風洞試験の際は高圧風洞を用いて密度を高くすることで，\eqref{eq:レイノルズ数}における流速$U$を小さくする必要がある．ここで，風洞試験時の粘性率$\mu_0 = 1.4607 \times 10^{-5}$ [kg/m/s]である．
+
+したがって，\eqref{eq:レイノルズ数}において，風洞試験の際の速度$U_0$を求めると以下のようになる．
+\begin{align}
+\begin{split}
+\label{eq:風洞速度}U_0 = \frac{Re_0 \cdot \mu_0}{\rho_0' \cdot MAC_0} = \frac{2.696 \times 10^7 \cdot 1.4607 \times 10^{-5}}{\rho_0' \cdot 0.151}
+\end{split}
+\end{align}
+計算の結果，風洞試験時の密度$\rho_0' = 11.89$ [kg/m$^3$]，速度$U_0' = 268.7$ [m/s]となった． この条件で風洞試験を行うことで，巡行時のレイノルズ数とマッハ数を再現することができる．
+
+\subsection{揚力係数$C_L$と抗力係数$C_D$}
+さて，必要なパラメータがそろったため，風洞試験時の揚力係数$C_L$と抗力係数$C_D$を算出する．風洞試験時の揚力と抗力は，実際に測定を行う必要があるため，ここでは揚力と抗力をそれぞれ$L_0$，$D_0$と表す．これらの値を用いて，風洞試験時の揚力係数$C_{L}$と抗力係数$C_{D}$を算出する．
+\eqref{eq:揚力係数}より，風洞試験時の揚力係数$C_{L}$は以下のようになる．
+\begin{align}
+\label{eq:風洞揚力係数}
+C_{L} = \frac{L_0}{\frac{1}{2}\rho_0' {U_0'}^2 S_0} = \frac{L_0}{\frac{1}{2} \cdot 11.89 \cdot 268.7^2 \cdot 122.4} = 1.903 \times 10^-8 L_0
+\end{align}
+同様に，風洞試験時の抗力係数$C_{D}$は以下のようになる．
+\begin{align}
+\label{eq:風洞抗力係数}
+C_{D} = \frac{D_0}{\frac{1}{2}\rho_0' U_0'^2 S_0} = \frac{D_0}{\frac{1}{2} \cdot 11.89 \cdot 268.7^2 \cdot 122.4} = 1.903 \times 10^-8 D_0
+\end{align}
+
+\section{数値流体力学を用いた模型の風洞試験を用いた揚力$L$，抗力$D$の求め方}
+
+
+\begin{thebibliography}{99}
+%bibitem{キー} 著者 『[第○版] 題名』，出版社，(出版年)
+  \bibitem{} 『[] 』， ()
+%bibitem{キー} 著者 『題名』，url{URL}，(閲覧日)
+  \bibitem{諸元} 鳳文書林出版販売『エアバスA321-200ceo/neo』，\url{http://www.hobun.co.jp/pdf/zensyuumihon.pdf} (閲覧日：2026年6月10日)
+\end{thebibliography}
+
+
+\end{document}
